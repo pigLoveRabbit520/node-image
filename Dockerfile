@@ -1,4 +1,4 @@
-FROM node:12.13
+FROM node:14.9
 
 
 RUN npm install -g cnpm  --registry=https://registry.npm.taobao.org
