@@ -1,0 +1,22 @@
+name: Build Image
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build_image_and_push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build the Docker image and push to Docker Hub
+        uses: mr-smithers-excellent/docker-build-push@v3
+        with:
+          image: salamandermh/node
+          tag: latest
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
