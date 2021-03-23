@@ -1,5 +1,5 @@
 FROM node:14.16
-LABEL MAINTAINER salamander
+LABEL MAINTAINER="salamander"
 
 # 修改时区
 ENV TZ=Asia/Shanghai
