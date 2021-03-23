@@ -1,4 +1,4 @@
-FROM node:14.16
+FROM node:12.20
 LABEL MAINTAINER="salamander"
 
 # 修改时区
