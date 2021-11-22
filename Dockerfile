@@ -1,4 +1,4 @@
-FROM node:16.11-buster-slim
+FROM node:16.13-buster-slim
 LABEL MAINTAINER="salamander"
 
 # 修改时区
